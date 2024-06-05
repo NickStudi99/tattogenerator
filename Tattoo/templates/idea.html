@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Tattoo-Idee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Deine generierte Tattoo-Idee</h1>
+      <p style="font-size: 5em; color: yellow;">{{ idea }}</p>
+      <nav>
+        <a href="{{ url_for('index') }}" class="button">Zurück zur Startseite</a> |
+        <a href="{{ url_for('generate') }}" class="button">Noch eine Idee generieren</a>
+      </nav>
+    </div>
+  </body>
+</html>
